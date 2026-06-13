@@ -6,11 +6,11 @@ class Coffee:
         self.price = price
 
     @property
-    def get_size(self):
+    def size(self):
         return self._size
     
     @size.setter
-    def set_size(self, value):
+    def size(self, value):
         options = ["Small", "Medium", "Large"]
         # for o in options:
         if value not in options:
@@ -22,4 +22,4 @@ class Coffee:
         self.price += amount
         print("This coffee is great, hears a tip!")
 
-    size = property(get_size, set_size)
+    # size = property(get_size, set_size)
