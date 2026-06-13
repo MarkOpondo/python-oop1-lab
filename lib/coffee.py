@@ -14,12 +14,12 @@ class Coffee:
         options = ["Small", "Medium", "Large"]
         # for o in options:
         if value not in options:
-            print("size must be Small, medium, or Large")
+            print("size must be Small, Medium, or Large")
         else:
             self._size = value
 
     def tip(self, amount):
-        self.price += amount
+        self.price = amount + self.price
         print("This coffee is great, hears a tip!")
 
     # size = property(get_size, set_size)
